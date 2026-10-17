@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "عن الأولاد",
+    "poem": true,
+    "body": "أولادكم ليسوا أولادكم.\n\nإنهم أبناء الحياة وبناتها،\nوقد اشتاقت الحياة إلى نفسها.\n\nبكم يأتون، لكن ليس منكم،\nومع أنهم يعيشون معكم،\nفهم ليسوا ملكًا لكم.",
+    "source": "جبران خليل جبران - النبي"
+  },
+  "en": {
+    "title": "On Children",
+    "poem": true,
+    "body": "Your children are not your children.\n\nThey are the sons and daughters\nof Life's longing for itself.\n\nThey come through you but not from you,\nAnd though they are with you\nyet they belong not to you.",
+    "source": "Kahlil Gibran - The Prophet"
+  },
+  "de": {
+    "title": "Von den Kindern",
+    "poem": true,
+    "body": "Eure Kinder sind nicht eure Kinder.\n\nSie sind die Söhne und Töchter\nder Sehnsucht des Lebens nach sich selbst.\n\nSie kommen durch euch, aber nicht von euch,\nund obwohl sie bei euch sind,\ngehören sie euch nicht.",
+    "source": "Khalil Gibran - Der Prophet"
+  },
+  "tr": {
+    "title": "Çocuklar Üzerine",
+    "poem": true,
+    "body": "Çocuklarınız sizin çocuklarınız değildir.\n\nOnlar, Hayat'ın kendine duyduğu\nözlemin oğulları ve kızlarıdır.\n\nSizin aracılığınızla gelirler, ama sizden değil,\nve sizinle birlikte olsalar da\nsize ait değildirler.",
+    "source": "Halil Cibran - Ermiş"
+  }
+}

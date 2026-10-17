@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "تجري الرياح",
+    "poem": true,
+    "body": "ما كل ما يتمنى المرء يدركه\nتجري الرياح بما لا تشتهي السفن",
+    "source": "المتنبي"
+  },
+  "en": {
+    "title": "The Winds Blow",
+    "poem": true,
+    "body": "Not all that a man longs for will he reach;\nthe winds blow where the ships would never wish.",
+    "source": "al-Mutanabbi"
+  },
+  "de": {
+    "title": "Die Winde wehen",
+    "poem": true,
+    "body": "Nicht alles, was der Mensch sich wünscht, erreicht er;\ndie Winde wehen, wie es die Schiffe nicht begehren.",
+    "source": "al-Mutanabbi"
+  },
+  "tr": {
+    "title": "Rüzgârlar Eser",
+    "poem": true,
+    "body": "İnsan her dilediğine ulaşamaz;\nrüzgârlar, gemilerin istemediği yönde eser.",
+    "source": "Mütenebbî"
+  }
+}

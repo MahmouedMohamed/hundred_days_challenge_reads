@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "كن جميلًا",
+    "poem": true,
+    "body": "أيهذا الشاكي وما بك داء\nكن جميلًا تر الوجود جميلا",
+    "source": "إيليا أبو ماضي - فلسفة الحياة"
+  },
+  "en": {
+    "title": "Be Beautiful",
+    "poem": true,
+    "body": "O you who complain, though nothing ails you:\nbe beautiful, and you will see the world as beautiful.",
+    "source": "Elia Abu Madi - The Philosophy of Life"
+  },
+  "de": {
+    "title": "Sei schön",
+    "poem": true,
+    "body": "Du, der du klagst, obwohl dir nichts fehlt:\nSei schön, und du wirst die Welt schön sehen.",
+    "source": "Elia Abu Madi - Die Philosophie des Lebens"
+  },
+  "tr": {
+    "title": "Güzel Ol",
+    "poem": true,
+    "body": "Ey hiçbir derdi yokken yakınan,\ngüzel ol ki dünyayı güzel göresin.",
+    "source": "İlya Ebu Madi - Hayatın Felsefesi"
+  }
+}

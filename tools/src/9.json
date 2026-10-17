@@ -1,0 +1,22 @@
+{
+  "ar": {
+    "title": "غدًا",
+    "poem": true,
+    "body": "كان كل همه الغد،\nفمات الليلة.\n\nالحياة قصيرة."
+  },
+  "en": {
+    "title": "Tomorrow",
+    "poem": true,
+    "body": "All his worry was about tomorrow.\nHe died tonight.\n\nLife is short."
+  },
+  "de": {
+    "title": "Morgen",
+    "poem": true,
+    "body": "Seine ganze Sorge galt dem Morgen.\nEr starb heute Nacht.\n\nDas Leben ist kurz."
+  },
+  "tr": {
+    "title": "Yarın",
+    "poem": true,
+    "body": "Bütün derdi yarındı.\nBu gece öldü.\n\nHayat kısa."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "الطريق الذي لم أسلكه",
+    "poem": true,
+    "body": "سأحكي هذا مع تنهيدة\nفي مكان ما، بعد دهور ودهور:\n\nتفرّع طريقان في غابة، وأنا،\nأنا سلكت الطريق الذي قلّ من سلكه،\nوهذا ما صنع الفرق كله.",
+    "source": "روبرت فروست"
+  },
+  "en": {
+    "title": "The Road Not Taken",
+    "poem": true,
+    "body": "I shall be telling this with a sigh\nSomewhere ages and ages hence:\n\nTwo roads diverged in a wood, and I —\nI took the one less traveled by,\nAnd that has made all the difference.",
+    "source": "Robert Frost"
+  },
+  "de": {
+    "title": "Der nicht gegangene Weg",
+    "poem": true,
+    "body": "Ich werde dies mit einem Seufzer erzählen,\nirgendwo, in fernen Jahren:\n\nZwei Wege teilten sich in einem Wald, und ich –\nich nahm den, der weniger begangen war,\nund das hat den ganzen Unterschied gemacht.",
+    "source": "Robert Frost"
+  },
+  "tr": {
+    "title": "Gidilmeyen Yol",
+    "poem": true,
+    "body": "Bunu bir iç çekişle anlatacağım,\nbir yerlerde, yıllar yıllar sonra:\n\nBir ormanda iki yol ayrıldı, ve ben —\nben daha az yürünmüş olanı seçtim,\nve bütün farkı yaratan da bu oldu.",
+    "source": "Robert Frost"
+  }
+}

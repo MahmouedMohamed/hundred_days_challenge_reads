@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "كالوطن",
+    "poem": true,
+    "body": "غضب أبيك،\nتأنيب أمك،\nعتاب صديقك،\nعبث أخيك بأشيائك،\n\nكلها كالوطن،\nلا تعرف أنه جميل\nإلا إذا غادرته.",
+    "source": "أمل دنقل"
+  },
+  "en": {
+    "title": "Like Home",
+    "poem": true,
+    "body": "Your father's anger,\nyour mother's scolding,\nyour friend's reproach,\nyour brother messing with your things:\n\nall of them are like home.\nYou never know how beautiful it is\nuntil you leave it.",
+    "source": "Amal Dunqul"
+  },
+  "de": {
+    "title": "Wie die Heimat",
+    "poem": true,
+    "body": "Der Zorn deines Vaters,\nder Tadel deiner Mutter,\nder Vorwurf deines Freundes,\ndein Bruder, der an deinen Sachen herumspielt:\n\nAll das ist wie die Heimat.\nWie schön sie ist, weißt du erst,\nwenn du sie verlassen hast.",
+    "source": "Amal Dunqul"
+  },
+  "tr": {
+    "title": "Vatan Gibi",
+    "poem": true,
+    "body": "Babanın öfkesi,\nannenin azarı,\ndostunun sitemi,\nkardeşinin eşyalarını karıştırması:\n\nHepsi vatan gibidir.\nNe kadar güzel olduğunu\nancak ondan ayrılınca anlarsın.",
+    "source": "Amal Dunqul"
+  }
+}

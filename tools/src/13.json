@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "نيل المطالب",
+    "poem": true,
+    "body": "وما نيل المطالب بالتمني\nولكن تؤخذ الدنيا غلابا",
+    "source": "أحمد شوقي"
+  },
+  "en": {
+    "title": "Not by Wishing",
+    "poem": true,
+    "body": "Goals are not reached by wishing alone;\nthe world is won by striving.",
+    "source": "Ahmed Shawqi"
+  },
+  "de": {
+    "title": "Nicht durch Wünschen",
+    "poem": true,
+    "body": "Ziele erreicht man nicht durch bloßes Wünschen;\ndie Welt erobert man mit Mühe.",
+    "source": "Ahmad Schauqi"
+  },
+  "tr": {
+    "title": "Dilemekle Olmaz",
+    "poem": true,
+    "body": "İstekler yalnızca dilemekle elde edilmez;\ndünya ancak mücadeleyle kazanılır.",
+    "source": "Ahmed Şevki"
+  }
+}

@@ -36,3 +36,22 @@ Never rename or reorder folders that are already published: users who read them 
 ## Content and copyright
 
 Only publish pages you have the rights to share: your own writing, public-domain works, or material you have permission to redistribute. The pages in folders `1`–`3` are original samples written for this repository; replace them with your own content.
+
+## facts/ (the note on Today, for Muslim users)
+
+`facts/<lang>.json` (`ar`, `en`, `de`, `tr`) is a list in order. Each person goes through it from the first entry, one per day *they open the app* (the note changes at Fajr), so a day nobody opens the app skips nothing. After the last entry it starts again from the first. Keep the files in the same order in every language, and add new entries at the end. The card sits on Today above the daily reading and is closed until the user taps it.
+
+```json
+[
+  {
+    "text": "The note itself. Line breaks are kept.",
+    "source": "Optional: a book, an author, a surah and verse",
+    "category": "quote"
+  }
+]
+```
+
+- `text` is required. `source` and `category` are optional.
+- `category` sets the colour and the title: `info` (fact), `quote`, `poetry`, `hadith`, `quran` (verse). Leave it out, or use any other word, for the default look and the title "Today's note".
+- Quran verses are written in Arabic in every language file; they are not translated.
+- A language without a file falls back to another language, so add the entry to every file you maintain.

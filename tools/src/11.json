@@ -1,0 +1,26 @@
+{
+  "ar": {
+    "title": "الماء الراكد",
+    "poem": true,
+    "body": "إني رأيت وقوف الماء يفسده\nإن ساح طاب وإن لم يجر لم يطب",
+    "source": "الإمام الشافعي"
+  },
+  "en": {
+    "title": "Still Water",
+    "poem": true,
+    "body": "I have seen that standing still spoils water:\nif it flows, it is sweet; if it does not run, it turns foul.",
+    "source": "Imam al-Shafi'i"
+  },
+  "de": {
+    "title": "Stehendes Wasser",
+    "poem": true,
+    "body": "Ich sah, dass Stillstand das Wasser verdirbt:\nfließt es, wird es rein; fließt es nicht, verdirbt es.",
+    "source": "Imam asch-Schafi'i"
+  },
+  "tr": {
+    "title": "Durgun Su",
+    "poem": true,
+    "body": "Gördüm ki durmak suyu bozar:\nakarsa tatlanır, akmazsa bozulur.",
+    "source": "İmam Şafiî"
+  }
+}
