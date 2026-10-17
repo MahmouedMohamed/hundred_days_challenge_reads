@@ -16,6 +16,10 @@ and produces <N>/<lang>/1.png, 2.png, ... (+ q.txt when there is a question),
 plus a flat <N>/1.png, ... copy in FLAT_LANG for builds older than languages,
 where N is the source file's name. Long texts flow onto as many pages as
 needed. The look matches the original sample pages in 1/-3/.
+
+A language may instead give "pages": [{"title": ..., "body": ...}, ...] to fix
+the page breaks itself, each page with its own title. A top-level
+"_flat": false leaves the flat folder alone (used for the original 1/-3/).
 """
 
 import json
@@ -25,10 +29,10 @@ from pathlib import Path
 import arabic_reshaper
 from PIL import Image, ImageDraw, ImageFont
 
-try:
-    from bidi import get_display  # python-bidi >= 0.5
-except ImportError:
-    from bidi.algorithm import get_display
+# The pure-Python algorithm mirrors brackets and «» in right-to-left text.
+# The newer Rust-backed `bidi.get_display` (python-bidi 0.5+) does not, so
+# "(1)" and «...» would come out reversed.
+from bidi.algorithm import get_display
 
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = Path(r"C:\Windows\Fonts")
@@ -118,30 +122,38 @@ def render(day, lang, entry, flat=False):
     line_h, gap = 66, 34
 
     probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
-    lines = wrap(probe, entry["body"].strip(), body_font, lang, W - 2 * MARGIN)
-    title_lines = wrap(probe, entry["title"].strip(), title_font, lang, W - 2 * MARGIN)
-
     source = (entry.get("source") or "").strip()
     # Poems are centred, one verse half per line.
     align = "center" if entry.get("poem") else "start"
-    pages, img, draw = [], *new_page()
-    y = TITLE_TOP
-    for t in title_lines:
-        if t is not None:
-            draw_line(draw, y, t, title_font, TITLE, lang, "center")
-            y += 84
-    y = max(BODY_TOP, y + 70)
-    for line in lines:
-        if line is None:
-            y += gap
-            continue
-        if y + line_h > BODY_BOTTOM:
-            pages.append(img)
-            img, draw = new_page()
-            y = BODY_TOP_NEXT
-        draw_line(draw, y, line, body_font, TEXT, lang, align)
-        y += line_h
-    pages.append(img)
+
+    def lay_out(title, body):
+        """One titled section; flows onto extra pages when it is long."""
+        lines = wrap(probe, body.strip(), body_font, lang, W - 2 * MARGIN)
+        title_lines = wrap(probe, title.strip(), title_font, lang, W - 2 * MARGIN)
+        out, (img, draw) = [], new_page()
+        y = TITLE_TOP
+        for t in title_lines:
+            if t is not None:
+                draw_line(draw, y, t, title_font, TITLE, lang, "center")
+                y += 84
+        y = max(BODY_TOP, y + 70)
+        for line in lines:
+            if line is None:
+                y += gap
+                continue
+            if y + line_h > BODY_BOTTOM:
+                out.append(img)
+                img, draw = new_page()
+                y = BODY_TOP_NEXT
+            draw_line(draw, y, line, body_font, TEXT, lang, align)
+            y += line_h
+        out.append(img)
+        return out
+
+    # "pages": [{title, body}, ...] fixes the page breaks, each page with its
+    # own title; otherwise one title and a body that flows freely.
+    sections = entry.get("pages") or [entry]
+    pages = [p for s in sections for p in lay_out(s["title"], s["body"])]
 
     out = ROOT / str(day) if flat else ROOT / str(day) / lang
     out.mkdir(parents=True, exist_ok=True)
@@ -174,8 +186,13 @@ def main(src):
         if lang not in data:
             sys.exit(f"{src}: missing language '{lang}'")
     for lang, entry in data.items():
+        if lang.startswith("_"):
+            continue
         print(f"{day}/{lang}: {render(day, lang, entry)} page(s)")
-    print(f"{day}/ (flat, {FLAT_LANG}): {render(day, FLAT_LANG, data[FLAT_LANG], flat=True)} page(s)")
+    # "_flat": false leaves an existing flat folder (the original samples)
+    # exactly as it is.
+    if data.get("_flat", True):
+        print(f"{day}/ (flat, {FLAT_LANG}): {render(day, FLAT_LANG, data[FLAT_LANG], flat=True)} page(s)")
 
 
 if __name__ == "__main__":
