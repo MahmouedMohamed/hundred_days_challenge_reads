@@ -17,6 +17,16 @@ plus a flat <N>/1.png, ... copy in FLAT_LANG for builds older than languages,
 where N is the source file's name. Long texts flow onto as many pages as
 needed. The look matches the original sample pages in 1/-3/.
 
+Audiences. The first days are for everyone. From then on a day can be for
+Muslims or for everyone else only: put its source in tools/src/muslim/ or
+tools/src/general/ (the file name is still the day number, and the same day
+may exist in both) and it is rendered into muslim/<N>/<lang>/ or
+general/<N>/<lang>/, with no flat copy. Every run also rewrites index.json,
+which tells the app where each list ends so it never probes for folders.
+
+    python tools/make_pages.py tools/src/muslim/31.json tools/src/general/31.json
+    python tools/make_pages.py --index        # only rewrite index.json
+
 A language may instead give "pages": [{"title": ..., "body": ...}, ...] to fix
 the page breaks itself, each page with its own title. A top-level
 "_flat": false leaves the flat folder alone (used for the original 1/-3/).
@@ -59,7 +69,7 @@ FONT_FILES = {
     "ar": ("segoeuib.ttf", "segoeui.ttf"),
     "latin": ("georgiab.ttf", "georgia.ttf"),
 }
-DAY_LABEL = {"ar": "اليوم {n}", "en": "Day {n}", "de": "Tag {n}", "tr": "Gün {n}"}
+DAY_LABEL = {"ar": "اليوم {n}", "en": "Day {n}", "de": "Tag {n}", "tr": "Gün {n}", "fr": "Jour {n}"}
 
 
 def shape(text, lang):
@@ -114,7 +124,7 @@ def draw_line(draw, y, text, font, fill, lang, align="start"):
 FLAT_LANG = "ar"
 
 
-def render(day, lang, entry, flat=False):
+def render(day, lang, entry, flat=False, audience=None):
     bold, regular = FONT_FILES["ar" if lang in RTL else "latin"]
     title_font = ImageFont.truetype(str(FONTS / bold), 64)
     body_font = ImageFont.truetype(str(FONTS / regular), 40)
@@ -155,7 +165,8 @@ def render(day, lang, entry, flat=False):
     sections = entry.get("pages") or [entry]
     pages = [p for s in sections for p in lay_out(s["title"], s["body"])]
 
-    out = ROOT / str(day) if flat else ROOT / str(day) / lang
+    base = ROOT / audience if audience else ROOT
+    out = base / str(day) if flat else base / str(day) / lang
     out.mkdir(parents=True, exist_ok=True)
     for old in out.glob("*.png"):
         old.unlink()
@@ -178,23 +189,59 @@ def render(day, lang, entry, flat=False):
     return len(pages)
 
 
+AUDIENCES = ("muslim", "general")
+
+
+def _exists(folder):
+    """A folder is there when it has a first page, flat or in a language."""
+    return (folder / "1.png").exists() or any(
+        (folder / lang / "1.png").exists() for lang in DAY_LABEL
+    )
+
+
+def build_index():
+    """Where each list of folders ends: the shared ones (1, 2, 3, ...), then
+    each audience's own run that continues right after them."""
+    shared = 0
+    while _exists(ROOT / str(shared + 1)):
+        shared += 1
+    index = {"shared": shared}
+    for audience in AUDIENCES:
+        last = shared
+        while _exists(ROOT / audience / str(last + 1)):
+            last += 1
+        index[audience] = last
+    return index
+
+
+def write_index():
+    index = build_index()
+    (ROOT / "index.json").write_text(json.dumps(index) + "\n", encoding="utf-8")
+    print(f"index.json: {index}")
+
+
 def main(src):
     src = Path(src)
     day = int(src.stem)
+    audience = src.parent.name if src.parent.name in AUDIENCES else None
     data = json.loads(src.read_text(encoding="utf-8"))
-    for lang in ("ar", "en", "de", "tr"):
+    for lang in ("ar", "en", "de", "tr", "fr"):
         if lang not in data:
             sys.exit(f"{src}: missing language '{lang}'")
+    where = f"{audience}/{day}" if audience else f"{day}"
     for lang, entry in data.items():
         if lang.startswith("_"):
             continue
-        print(f"{day}/{lang}: {render(day, lang, entry)} page(s)")
-    # "_flat": false leaves an existing flat folder (the original samples)
-    # exactly as it is.
-    if data.get("_flat", True):
+        print(f"{where}/{lang}: {render(day, lang, entry, audience=audience)} page(s)")
+    # The flat copy is for builds older than languages, which only know the
+    # shared folders; an audience folder has none. "_flat": false leaves an
+    # existing flat folder (the original samples) exactly as it is.
+    if not audience and data.get("_flat", True):
         print(f"{day}/ (flat, {FLAT_LANG}): {render(day, FLAT_LANG, data[FLAT_LANG], flat=True)} page(s)")
 
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        main(arg)
+        if arg != "--index":
+            main(arg)
+    write_index()
