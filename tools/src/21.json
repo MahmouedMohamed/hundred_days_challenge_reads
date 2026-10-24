@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "نعيب زماننا",
+    "poem": true,
+    "body": "نعيب زماننا والعيب فينا\nوما لزماننا عيب سوانا\n\nونهجو ذا الزمان بغير ذنب\nولو نطق الزمان لنا هجانا",
+    "source": "الإمام الشافعي"
+  },
+  "en": {
+    "title": "We Blame Our Times",
+    "poem": true,
+    "body": "We blame our times, while the fault is in us;\nour times have no fault but us.\n\nWe mock this age though it has done no wrong;\nif the age could speak, it would mock us.",
+    "source": "Imam al-Shafi'i"
+  },
+  "de": {
+    "title": "Wir tadeln unsere Zeit",
+    "poem": true,
+    "body": "Wir tadeln unsere Zeit, doch der Fehler liegt in uns;\nunsere Zeit hat keinen Fehler außer uns.\n\nWir schmähen diese Zeit, obwohl sie keine Schuld trägt;\nkönnte die Zeit sprechen, sie würde uns schmähen.",
+    "source": "Imam asch-Schafi'i"
+  },
+  "tr": {
+    "title": "Zamanı Suçluyoruz",
+    "poem": true,
+    "body": "Zamanımızı suçluyoruz, oysa kusur bizde;\nzamanımızın bizden başka kusuru yok.\n\nBu zamanı suçsuz yere yeriyoruz;\nzaman dile gelse, o bizi yerer.",
+    "source": "İmam Şafiî"
+  },
+  "fr": {
+    "title": "Blâmer son époque",
+    "poem": true,
+    "body": "Nous blâmons notre époque, mais le défaut est en nous ;\nnotre époque n'a d'autre défaut que nous.\n\nNous raillons ce temps qui n'a commis aucune faute ;\nsi le temps parlait, c'est lui qui nous raillerait.",
+    "source": "Imam al-Shafi'i"
+  }
+}

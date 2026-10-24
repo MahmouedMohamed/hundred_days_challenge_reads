@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "قصر الحياة",
+    "poem": true,
+    "body": "ليس الأمر أن الوقت الذي نملكه قصير،\nبل أننا نضيع الكثير منه.\n\nالحياة طويلة\nإن عرفت كيف تستعملها.",
+    "source": "سينيكا - في قصر الحياة"
+  },
+  "en": {
+    "title": "On the Shortness of Life",
+    "poem": true,
+    "body": "It is not that we have a short time to live,\nbut that we waste much of it.\n\nLife is long\nif you know how to use it.",
+    "source": "Seneca - On the Shortness of Life"
+  },
+  "de": {
+    "title": "Von der Kürze des Lebens",
+    "poem": true,
+    "body": "Nicht wenig Zeit haben wir,\nsondern viel davon verschwenden wir.\n\nDas Leben ist lang,\nwenn man es zu nutzen weiß.",
+    "source": "Seneca - Von der Kürze des Lebens"
+  },
+  "tr": {
+    "title": "Hayatın Kısalığı Üzerine",
+    "poem": true,
+    "body": "Az zamanımız olduğundan değil,\nçoğunu boşa harcadığımızdandır.\n\nHayat uzundur,\nnasıl kullanacağını bilirsen.",
+    "source": "Seneca - Hayatın Kısalığı Üzerine"
+  },
+  "fr": {
+    "title": "De la brièveté de la vie",
+    "poem": true,
+    "body": "Ce n'est pas que nous ayons peu de temps,\nc'est que nous en perdons beaucoup.\n\nLa vie est longue\nsi l'on sait s'en servir.",
+    "source": "Sénèque - De la brièveté de la vie"
+  }
+}

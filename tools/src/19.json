@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "خطوة واحدة",
+    "poem": true,
+    "body": "رحلة الألف ميل\nتبدأ بخطوة واحدة.",
+    "source": "لاو تسو - كتاب الطريق والفضيلة"
+  },
+  "en": {
+    "title": "A Single Step",
+    "poem": true,
+    "body": "A journey of a thousand miles\nbegins with a single step.",
+    "source": "Lao Tzu - Tao Te Ching"
+  },
+  "de": {
+    "title": "Ein einziger Schritt",
+    "poem": true,
+    "body": "Auch eine Reise von tausend Meilen\nbeginnt mit einem einzigen Schritt.",
+    "source": "Laozi - Tao te king"
+  },
+  "tr": {
+    "title": "Tek Bir Adım",
+    "poem": true,
+    "body": "Bin millik bir yolculuk\ntek bir adımla başlar.",
+    "source": "Lao Tzu - Tao Te Ching"
+  },
+  "fr": {
+    "title": "Un seul pas",
+    "poem": true,
+    "body": "Un voyage de mille lieues\ncommence par un seul pas.",
+    "source": "Lao-tseu - Tao-tö-king"
+  }
+}

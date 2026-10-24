@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "الأم مدرسة",
+    "poem": true,
+    "body": "الأم مدرسة إذا أعددتها\nأعددت شعبًا طيب الأعراق",
+    "source": "حافظ إبراهيم"
+  },
+  "en": {
+    "title": "A Mother Is a School",
+    "poem": true,
+    "body": "A mother is a school: if you prepare her well,\nyou prepare a whole people of noble roots.",
+    "source": "Hafez Ibrahim"
+  },
+  "de": {
+    "title": "Die Mutter ist eine Schule",
+    "poem": true,
+    "body": "Die Mutter ist eine Schule: Bereitest du sie gut vor,\nbereitest du ein ganzes Volk von edler Art vor.",
+    "source": "Hafis Ibrahim"
+  },
+  "tr": {
+    "title": "Anne Bir Okuldur",
+    "poem": true,
+    "body": "Anne bir okuldur; onu iyi yetiştirirsen,\nsoylu köklere sahip bir millet yetiştirirsin.",
+    "source": "Hafız İbrahim"
+  },
+  "fr": {
+    "title": "La mère est une école",
+    "poem": true,
+    "body": "La mère est une école : si tu la prépares bien,\ntu prépares tout un peuple aux nobles racines.",
+    "source": "Hafez Ibrahim"
+  }
+}

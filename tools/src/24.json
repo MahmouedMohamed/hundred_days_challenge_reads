@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "الوقت والصبر",
+    "poem": true,
+    "body": "أقوى المحاربين جميعًا اثنان:\nالوقت والصبر.",
+    "source": "ليو تولستوي - الحرب والسلام"
+  },
+  "en": {
+    "title": "Time and Patience",
+    "poem": true,
+    "body": "The strongest of all warriors are these two:\nTime and Patience.",
+    "source": "Leo Tolstoy - War and Peace"
+  },
+  "de": {
+    "title": "Zeit und Geduld",
+    "poem": true,
+    "body": "Die stärksten aller Krieger sind diese zwei:\ndie Zeit und die Geduld.",
+    "source": "Leo Tolstoi - Krieg und Frieden"
+  },
+  "tr": {
+    "title": "Zaman ve Sabır",
+    "poem": true,
+    "body": "Bütün savaşçıların en güçlüsü şu ikisidir:\nzaman ve sabır.",
+    "source": "Lev Tolstoy - Savaş ve Barış"
+  },
+  "fr": {
+    "title": "Le temps et la patience",
+    "poem": true,
+    "body": "Les plus puissants de tous les guerriers sont ces deux-là :\nle temps et la patience.",
+    "source": "Léon Tolstoï - Guerre et Paix"
+  }
+}

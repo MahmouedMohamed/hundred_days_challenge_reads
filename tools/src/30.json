@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "الأخلاق",
+    "poem": true,
+    "body": "وإنما الأمم الأخلاق ما بقيت\nفإن هم ذهبت أخلاقهم ذهبوا",
+    "source": "أحمد شوقي"
+  },
+  "en": {
+    "title": "Character",
+    "poem": true,
+    "body": "Nations are nothing but their character, as long as it lasts;\nwhen their character is gone, they are gone.",
+    "source": "Ahmed Shawqi"
+  },
+  "de": {
+    "title": "Charakter",
+    "poem": true,
+    "body": "Völker sind nichts als ihre Sitten, solange diese bestehen;\nsind ihre Sitten dahin, so sind auch sie dahin.",
+    "source": "Ahmad Schauqi"
+  },
+  "tr": {
+    "title": "Ahlak",
+    "poem": true,
+    "body": "Milletler, ahlakları yaşadıkça vardır;\nahlakları giderse, kendileri de gider.",
+    "source": "Ahmed Şevki"
+  },
+  "fr": {
+    "title": "Le caractère",
+    "poem": true,
+    "body": "Les nations ne sont que leur morale, tant qu'elle demeure ;\nquand leur morale s'en va, elles s'en vont aussi.",
+    "source": "Ahmed Shawqi"
+  }
+}

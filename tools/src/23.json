@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "الامتنان",
+    "poem": true,
+    "body": "الامتنان ليس أعظم الفضائل فحسب،\nبل هو أم الفضائل كلها.",
+    "source": "شيشرون"
+  },
+  "en": {
+    "title": "Gratitude",
+    "poem": true,
+    "body": "Gratitude is not only the greatest of virtues,\nbut the parent of all the others.",
+    "source": "Cicero"
+  },
+  "de": {
+    "title": "Dankbarkeit",
+    "poem": true,
+    "body": "Dankbarkeit ist nicht nur die größte aller Tugenden,\nsondern die Mutter aller anderen.",
+    "source": "Cicero"
+  },
+  "tr": {
+    "title": "Minnet",
+    "poem": true,
+    "body": "Minnet, erdemlerin yalnızca en büyüğü değil,\ndiğer bütün erdemlerin de anasıdır.",
+    "source": "Cicero"
+  },
+  "fr": {
+    "title": "La gratitude",
+    "poem": true,
+    "body": "La gratitude n'est pas seulement la plus grande des vertus,\nelle est la mère de toutes les autres.",
+    "source": "Cicéron"
+  }
+}

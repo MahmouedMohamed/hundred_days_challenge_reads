@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "أحسن إلى الناس",
+    "poem": true,
+    "body": "أحسن إلى الناس تستعبد قلوبهم\nفطالما استعبد الإنسان إحسان",
+    "source": "أبو الفتح البستي"
+  },
+  "en": {
+    "title": "Be Good to People",
+    "poem": true,
+    "body": "Be good to people, and you will win their hearts;\nkindness has long made people its captives.",
+    "source": "Abu al-Fath al-Busti"
+  },
+  "de": {
+    "title": "Sei gut zu den Menschen",
+    "poem": true,
+    "body": "Sei gut zu den Menschen, und du gewinnst ihre Herzen;\nschon immer hat Güte die Menschen gefangen genommen.",
+    "source": "Abu l-Fath al-Busti"
+  },
+  "tr": {
+    "title": "İnsanlara İyilik Et",
+    "poem": true,
+    "body": "İnsanlara iyilik et, gönüllerini kazanırsın;\niyilik insanı hep kendine bağlamıştır.",
+    "source": "Ebu'l-Feth el-Büstî"
+  },
+  "fr": {
+    "title": "Sois bon envers les gens",
+    "poem": true,
+    "body": "Sois bon envers les gens, tu gagneras leurs cœurs.\nLa bonté a toujours captivé les hommes.",
+    "source": "Abou al-Fath al-Bousti"
+  }
+}

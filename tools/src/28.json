@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "خير جليس",
+    "poem": true,
+    "body": "أعز مكان في الدنى سرج سابح\nوخير جليس في الزمان كتاب",
+    "source": "المتنبي"
+  },
+  "en": {
+    "title": "The Best Companion",
+    "poem": true,
+    "body": "The most precious seat in the world is the saddle of a swift horse,\nand the best companion in every age is a book.",
+    "source": "al-Mutanabbi"
+  },
+  "de": {
+    "title": "Der beste Gefährte",
+    "poem": true,
+    "body": "Der kostbarste Platz der Welt ist der Sattel eines schnellen Pferdes,\nund der beste Gefährte zu jeder Zeit ist ein Buch.",
+    "source": "al-Mutanabbi"
+  },
+  "tr": {
+    "title": "En İyi Dost",
+    "poem": true,
+    "body": "Dünyanın en değerli yeri hızlı bir atın eyeridir,\nher zamanın en iyi dostu ise kitaptır.",
+    "source": "Mütenebbî"
+  },
+  "fr": {
+    "title": "Le meilleur compagnon",
+    "poem": true,
+    "body": "La place la plus précieuse au monde est la selle d'un cheval rapide,\net le meilleur compagnon, en tout temps, est un livre.",
+    "source": "al-Mutanabbi"
+  }
+}

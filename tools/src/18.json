@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "صعود الجبال",
+    "poem": true,
+    "body": "ومن يتهيب صعود الجبال\nيعش أبد الدهر بين الحفر",
+    "source": "أبو القاسم الشابي - إرادة الحياة"
+  },
+  "en": {
+    "title": "Climbing Mountains",
+    "poem": true,
+    "body": "Whoever fears to climb the mountains\nwill live forever among the pits.",
+    "source": "Abu al-Qasim al-Shabbi - The Will to Live"
+  },
+  "de": {
+    "title": "Berge besteigen",
+    "poem": true,
+    "body": "Wer sich fürchtet, die Berge zu besteigen,\nlebt für immer zwischen den Gruben.",
+    "source": "Abu al-Qasim asch-Schabbi - Der Wille zum Leben"
+  },
+  "tr": {
+    "title": "Dağlara Tırmanmak",
+    "poem": true,
+    "body": "Dağlara tırmanmaktan korkan,\nömür boyu çukurlar arasında yaşar.",
+    "source": "Ebu'l-Kasım eş-Şabbi - Yaşama İradesi"
+  },
+  "fr": {
+    "title": "Gravir les montagnes",
+    "poem": true,
+    "body": "Celui qui craint de gravir les montagnes\nvivra à jamais parmi les creux.",
+    "source": "Abou el Kacem Chebbi - La volonté de vivre"
+  }
+}

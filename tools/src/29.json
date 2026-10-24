@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "الرحمة",
+    "poem": true,
+    "body": "الرحمة لا تنتزع انتزاعًا،\nبل تهطل كالمطر الرقيق من السماء\nعلى الأرض من تحتها.\n\nإنها مباركة مرتين:\nتبارك من يعطي، ومن يأخذ.",
+    "source": "ويليام شكسبير - تاجر البندقية"
+  },
+  "en": {
+    "title": "The Quality of Mercy",
+    "poem": true,
+    "body": "The quality of mercy is not strained;\nIt droppeth as the gentle rain from heaven\nUpon the place beneath.\n\nIt is twice blest:\nIt blesseth him that gives and him that takes.",
+    "source": "William Shakespeare - The Merchant of Venice"
+  },
+  "de": {
+    "title": "Die Gnade",
+    "poem": true,
+    "body": "Die Gnade lässt sich nicht erzwingen;\nsie fällt wie sanfter Regen vom Himmel\nauf den Boden unter ihm.\n\nSie ist zweifach gesegnet:\nSie segnet den, der gibt, und den, der nimmt.",
+    "source": "William Shakespeare - Der Kaufmann von Venedig"
+  },
+  "tr": {
+    "title": "Merhamet",
+    "poem": true,
+    "body": "Merhamet zorla elde edilmez;\ngökten yumuşak bir yağmur gibi\naşağıdaki toprağa düşer.\n\nİki kez kutsanmıştır:\nhem vereni kutsar, hem alanı.",
+    "source": "William Shakespeare - Venedik Taciri"
+  },
+  "fr": {
+    "title": "La clémence",
+    "poem": true,
+    "body": "La clémence ne se commande pas ;\nelle tombe comme une douce pluie du ciel\nsur la terre qui est en dessous.\n\nElle est deux fois bénie :\nelle bénit celui qui donne et celui qui reçoit.",
+    "source": "William Shakespeare - Le Marchand de Venise"
+  }
+}

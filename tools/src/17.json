@@ -1,0 +1,32 @@
+{
+  "ar": {
+    "title": "على قدر أهل العزم",
+    "poem": true,
+    "body": "على قدر أهل العزم تأتي العزائم\nوتأتي على قدر الكرام المكارم\n\nوتعظم في عين الصغير صغارها\nوتصغر في عين العظيم العظائم",
+    "source": "المتنبي"
+  },
+  "en": {
+    "title": "The Measure of Resolve",
+    "poem": true,
+    "body": "Resolve comes in the measure of the resolute,\nand noble deeds in the measure of the noble.\n\nIn small eyes, small things look great;\nin great eyes, great things look small.",
+    "source": "al-Mutanabbi"
+  },
+  "de": {
+    "title": "Das Maß des Willens",
+    "poem": true,
+    "body": "Nach dem Maß der Entschlossenen kommen die Entschlüsse,\nnach dem Maß der Edlen kommen die edlen Taten.\n\nIn den Augen des Kleinen wird das Kleine groß,\nin den Augen des Großen wird das Große klein.",
+    "source": "al-Mutanabbi"
+  },
+  "tr": {
+    "title": "Azmin Ölçüsü",
+    "poem": true,
+    "body": "Azimler, azim sahiplerinin ölçüsünce gelir,\nasil işler de asillerin ölçüsünce.\n\nKüçüğün gözünde küçük şeyler büyür,\nbüyüğün gözünde büyük şeyler küçülür.",
+    "source": "Mütenebbî"
+  },
+  "fr": {
+    "title": "La résolution",
+    "poem": true,
+    "body": "La résolution vient à la mesure des résolus,\net les nobles actions à la mesure des nobles.\n\nAux yeux du petit, les petites choses sont grandes ;\naux yeux du grand, les grandes choses sont petites.",
+    "source": "al-Mutanabbi"
+  }
+}
