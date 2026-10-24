@@ -22,5 +22,11 @@
     "poem": true,
     "body": "Bunu bir iç çekişle anlatacağım,\nbir yerlerde, yıllar yıllar sonra:\n\nBir ormanda iki yol ayrıldı, ve ben —\nben daha az yürünmüş olanı seçtim,\nve bütün farkı yaratan da bu oldu.",
     "source": "Robert Frost"
+  },
+  "fr": {
+    "title": "La route non prise",
+    "poem": true,
+    "body": "Je raconterai cela avec un soupir\nquelque part, dans bien longtemps :\n\nDeux routes se séparaient dans un bois, et moi,\nj'ai pris celle que peu avaient prise,\net c'est cela qui a fait toute la différence.",
+    "source": "Robert Frost"
   }
 }

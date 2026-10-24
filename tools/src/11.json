@@ -22,5 +22,11 @@
     "poem": true,
     "body": "Gördüm ki durmak suyu bozar:\nakarsa tatlanır, akmazsa bozulur.",
     "source": "İmam Şafiî"
+  },
+  "fr": {
+    "title": "L'eau stagnante",
+    "poem": true,
+    "body": "J'ai vu que l'immobilité gâte l'eau :\nsi elle coule, elle est pure ; si elle ne court pas, elle croupit.",
+    "source": "Imam al-Shafi'i"
   }
 }

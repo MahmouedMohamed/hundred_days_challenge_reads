@@ -22,5 +22,11 @@
     "poem": true,
     "body": "Ey hiçbir derdi yokken yakınan,\ngüzel ol ki dünyayı güzel göresin.",
     "source": "İlya Ebu Madi - Hayatın Felsefesi"
+  },
+  "fr": {
+    "title": "Sois beau",
+    "poem": true,
+    "body": "Toi qui te plains, alors que rien ne te mine :\nsois beau, et tu verras le monde beau.",
+    "source": "Elia Abu Madi - La philosophie de la vie"
   }
 }

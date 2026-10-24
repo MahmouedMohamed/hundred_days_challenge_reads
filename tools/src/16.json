@@ -1,0 +1,27 @@
+{
+  "ar": {
+    "title": "ميت الأحياء",
+    "poem": true,
+    "body": "قد مات قوم وهم في الناس أحياء\n\nليس من مات فاستراح بميت\nإنما الميت ميت الأحياء"
+  },
+  "en": {
+    "title": "Dead Among the Living",
+    "poem": true,
+    "body": "Some have died while still among the living.\n\nHe who died and found rest is not truly dead.\nThe truly dead is the one who is dead among the living."
+  },
+  "de": {
+    "title": "Tot unter den Lebenden",
+    "poem": true,
+    "body": "Manche sind gestorben, obwohl sie noch unter den Lebenden weilen.\n\nWer gestorben und zur Ruhe gekommen ist, ist nicht wirklich tot.\nWirklich tot ist der, der unter den Lebenden tot ist."
+  },
+  "tr": {
+    "title": "Dirilerin Ölüsü",
+    "poem": true,
+    "body": "Bazıları, insanların arasında yaşarken ölmüştür.\n\nÖlüp rahata kavuşan gerçekten ölü değildir.\nAsıl ölü, dirilerin arasındaki ölüdür."
+  },
+  "fr": {
+    "title": "Mort parmi les vivants",
+    "poem": true,
+    "body": "Certains sont morts alors qu'ils vivent encore parmi les vivants.\n\nCelui qui est mort et a trouvé le repos n'est pas vraiment mort.\nLe véritable mort est celui qui est mort parmi les vivants."
+  }
+}
