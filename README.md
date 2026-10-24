@@ -58,4 +58,11 @@ Only publish pages you have the rights to share: your own writing, public-domain
 
 ## votes/ (the vote on new challenges, a 50-challenge reward)
 
-`votes/current.json` is the open vote: a `round` id and 2 to 5 `candidates`, each with an `id` and its `text` in every app language. People who reached 50 challenges pick one in the app; each vote lands in the Firestore collection `challengeVotes` with the round and the candidate id. To start a new vote, change `round` (for example `2026-12`) and the candidates; a new round id lets everyone vote again. To close voting, delete the file.
+`votes/current.json` is the open vote: its `id` and 2 to 5 `candidates`, each with its own `id` and its `text` in every app language. People who reached 50 challenges pick one in the app; each vote lands in the Firestore collection `challengeVotes` with the vote id (`voteId`) and the candidate id. A new vote id is a new vote: everyone can vote again. To close voting, delete the file.
+
+When a vote ends:
+1. Count it: in the Firebase console, `challengeVotes`, filter `voteId` = the vote's id and count each `candidate`.
+2. Close it: delete `votes/current.json` (the app then says no vote is open).
+3. Ship the winner: add it to `content/challenges.json` in the app (all five languages), run `dart run tool/encrypt_challenges.dart`, and release.
+4. Tell people: a post, or a push to the `all` topic from the admin panel, naming the winner.
+5. Next vote: a new `votes/current.json` with a new `id` (for example `2026-12`) and new candidates.
