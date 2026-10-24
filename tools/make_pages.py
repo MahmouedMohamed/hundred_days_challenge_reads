@@ -17,14 +17,17 @@ plus a flat <N>/1.png, ... copy in FLAT_LANG for builds older than languages,
 where N is the source file's name. Long texts flow onto as many pages as
 needed. The look matches the original sample pages in 1/-3/.
 
-Audiences. The first days are for everyone. From then on a day can be for
-Muslims or for everyone else only: put its source in tools/src/muslim/ or
-tools/src/general/ (the file name is still the day number, and the same day
-may exist in both) and it is rendered into muslim/<N>/<lang>/ or
-general/<N>/<lang>/, with no flat copy. Every run also rewrites index.json,
-which tells the app where each list ends so it never probes for folders.
+Audiences. The root folders (1/, 2/, ...) are the days from before there were
+audiences, for everyone, and they stay as they are. Each audience has its own
+complete list that starts at day 1: muslim/<N>/<lang>/ and general/<N>/<lang>/.
+Days 1 to 10 there are copies of the root days (--copy-shared); every day after
+them is added to the audience folders only: put its source in tools/src/muslim/
+or tools/src/general/ (the file name is the day number) and it is rendered
+there, with no flat copy. Every run also rewrites index.json, which tells the
+app where each list ends so it never probes for folders.
 
-    python tools/make_pages.py tools/src/muslim/31.json tools/src/general/31.json
+    python tools/make_pages.py tools/src/muslim/11.json tools/src/general/11.json
+    python tools/make_pages.py --copy-shared  # copy the root days into both audiences
     python tools/make_pages.py --index        # only rewrite index.json
 
 A language may instead give "pages": [{"title": ..., "body": ...}, ...] to fix
@@ -200,18 +203,39 @@ def _exists(folder):
 
 
 def build_index():
-    """Where each list of folders ends: the shared ones (1, 2, 3, ...), then
-    each audience's own run that continues right after them."""
-    shared = 0
-    while _exists(ROOT / str(shared + 1)):
-        shared += 1
-    index = {"shared": shared}
+    """Where each list of folders ends: the root days (1, 2, 3, ...) and each
+    audience's own list, which also starts at 1."""
+    def last_of(base):
+        n = 0
+        while _exists(base / str(n + 1)):
+            n += 1
+        return n
+
+    index = {"shared": last_of(ROOT)}
     for audience in AUDIENCES:
-        last = shared
-        while _exists(ROOT / audience / str(last + 1)):
-            last += 1
-        index[audience] = last
+        index[audience] = last_of(ROOT / audience)
     return index
+
+
+def copy_shared():
+    """Copies the language folders of every root day into muslim/ and
+    general/ (the flat copy is only for builds older than languages, so it is
+    left out). Safe to repeat: a day is replaced by the root's version."""
+    import shutil
+
+    day = 1
+    while _exists(ROOT / str(day)):
+        for audience in AUDIENCES:
+            for lang in DAY_LABEL:
+                src = ROOT / str(day) / lang
+                if not (src / "1.png").exists():
+                    continue
+                dst = ROOT / audience / str(day) / lang
+                if dst.exists():
+                    shutil.rmtree(dst)
+                shutil.copytree(src, dst)
+        print(f"day {day} copied into {', '.join(AUDIENCES)}")
+        day += 1
 
 
 def write_index():
@@ -242,6 +266,8 @@ def main(src):
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        if arg != "--index":
+        if arg == "--copy-shared":
+            copy_shared()
+        elif arg != "--index":
             main(arg)
     write_index()

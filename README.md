@@ -18,21 +18,21 @@ Daily reading pages for the [100 Day Challenge](https://github.com/MahmouedMoham
 - Each folder holds one or more **pages**, numbered `1.png`, `2.png`, … with no gaps. Pages in a folder belong together and are shown in order.
 - PNG only. Portrait pages around 1080×1520 read best on phones.
 
-## Shared days and days per audience
+## One list per audience
 
-The first days are **for everyone**: `1/`, `2/`, … Past them, a day can be for **Muslims** (`muslim/N/…`) or for **everyone else** (`general/N/…`), with the same layout inside (`muslim/31/ar/1.png`, …). The number is still the user's own count: a Muslim's day 31 is `muslim/31/`, anyone else's is `general/31/`. The two lists can differ and can end at different days.
+Each audience has its own complete list, starting at day 1: **Muslims** read `muslim/N/…` and **everyone else** reads `general/N/…`, with the same layout inside (`muslim/11/ar/1.png`, …). `N` is the user's own count of days. The two lists can differ and can end at different days.
 
-People who already have the shared days keep them exactly as they are; a folder is never renumbered. The app saves where each folder came from.
+The root folders `1/` … `10/` are the days from before audiences existed. They stay exactly as they are: apps that predate audiences only read them, and people who already downloaded them keep them (a folder is never renumbered). Days 1 to 10 in `muslim/` and `general/` are copies of those. **Every day after 10 is added to `muslim/` and `general/` only**, never to the root, so the root stops at 10 for good.
 
 ### index.json
 
 `index.json` says where each list ends, so the app finds out in **one request** whether there is anything new, and never probes for folders that are not there:
 
 ```json
-{"shared": 30, "muslim": 33, "general": 31}
+{"shared": 10, "muslim": 12, "general": 11}
 ```
 
-`shared` is the last day for everyone. `muslim` and `general` are the last day of each audience's own run after it (equal to `shared` when it has none). It is written by the tool below; do not edit it by hand. An app without `index.json` behaves as before (shared folders only). App versions before audiences only know the shared folders, so they stop at `shared`.
+`shared` is the last root day. `muslim` and `general` are the last day of each audience's own list. A phone reads its audience's folder while it has that day, and falls back to the root while the root has it. It is written by the tool below; do not edit it by hand. An app without `index.json` behaves as before (root folders only). App versions before audiences only know the root folders, so they stop at `shared`.
 
 A phone that looked and found nothing does not look again the same day, and after that only asks for the one folder it is due, so the repo gets a handful of requests per person per day.
 
@@ -41,13 +41,14 @@ A phone that looked and found nothing does not look again the same day, and afte
 `tools/make_pages.py` renders a day from one source file with every language (ar, en, de, tr, fr):
 
 ```
-python tools/make_pages.py tools/src/31.json                  # for everyone, next shared day
-python tools/make_pages.py tools/src/muslim/31.json           # for Muslims only
-python tools/make_pages.py tools/src/general/31.json         # the same day number, for everyone else
-python tools/make_pages.py --index                            # only rewrite index.json
+python tools/make_pages.py tools/src/muslim/11.json          # day 11 for Muslims
+python tools/make_pages.py tools/src/general/11.json         # day 11 for everyone else
+python tools/make_pages.py --copy-shared                     # copy root days 1-10 into both audiences again
+python tools/make_pages.py --index                           # only rewrite index.json
+python tools/make_pages.py tools/src/5.json                  # re-render a root day (1-10) only
 ```
 
-Put the source in `tools/src/muslim/` or `tools/src/general/` for an audience day (the file name is the day number; the same number may exist in both). Every run rewrites `index.json`. Commit the folders and `index.json` together, then push.
+The source of an audience day goes in `tools/src/muslim/` or `tools/src/general/` (the file name is the day number; the same number may exist in both). If you fix a root day (1-10), run `--copy-shared` afterwards so the copies match. Every run rewrites `index.json`. Commit the folders and `index.json` together, then push.
 
 ### History
 
