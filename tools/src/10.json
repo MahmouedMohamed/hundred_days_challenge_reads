@@ -22,5 +22,11 @@
     "poem": true,
     "body": "İnsan her dilediğine ulaşamaz;\nrüzgârlar, gemilerin istemediği yönde eser.",
     "source": "Mütenebbî"
+  },
+  "fr": {
+    "title": "Les vents soufflent",
+    "poem": true,
+    "body": "Tout ce que l'homme désire, il ne l'atteint pas ;\nles vents soufflent là où les navires ne le voudraient pas.",
+    "source": "al-Mutanabbi"
   }
 }

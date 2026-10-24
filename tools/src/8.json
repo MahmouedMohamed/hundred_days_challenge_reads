@@ -22,5 +22,11 @@
     "poem": true,
     "body": "Babanın öfkesi,\nannenin azarı,\ndostunun sitemi,\nkardeşinin eşyalarını karıştırması:\n\nHepsi vatan gibidir.\nNe kadar güzel olduğunu\nancak ondan ayrılınca anlarsın.",
     "source": "Amal Dunqul"
+  },
+  "fr": {
+    "title": "Comme la patrie",
+    "poem": true,
+    "body": "La colère de ton père,\nles reproches de ta mère,\nle blâme de ton ami,\ntes affaires que ton frère déplace :\n\ntout cela est comme la patrie.\nTu ne sais pas combien elle est belle\ntant que tu ne l'as pas quittée.",
+    "source": "Amal Dunqul"
   }
 }

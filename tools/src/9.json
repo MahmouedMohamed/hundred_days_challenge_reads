@@ -18,5 +18,10 @@
     "title": "Yarın",
     "poem": true,
     "body": "Bütün derdi yarındı.\nBu gece öldü.\n\nHayat kısa."
+  },
+  "fr": {
+    "title": "Demain",
+    "poem": true,
+    "body": "Tout son souci était demain.\nIl est mort cette nuit.\n\nLa vie est courte."
   }
 }

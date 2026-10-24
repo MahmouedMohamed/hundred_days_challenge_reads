@@ -14,5 +14,9 @@
   "tr": {
     "title": "Kahvaltı Yaptın mı?",
     "body": "Annem her sabah bana tek bir mesaj gönderirdi: “Kahvaltı yaptın mı?” Okurdum ama cevap vermezdim. Cevap yazmak, bende olmayan bir zaman isterdi.\n\nMesajın gelmediği sabah ona ilk kez yazdım: “Kahvaltı yaptım anne.”\n\nHâlâ her sabah yazıyorum ve kimse okumuyor."
+  },
+  "fr": {
+    "title": "Tu as déjeuné ?",
+    "body": "Chaque matin, ma mère m'envoyait un seul message : « Tu as déjeuné ? » Je le lisais sans répondre. Répondre prenait un temps que je n'avais pas.\n\nLe matin où le message n'est pas arrivé, je lui ai écrit pour la première fois : « J'ai déjeuné, maman. »\n\nJe l'écris encore chaque matin, et personne ne le lit."
   }
 }
