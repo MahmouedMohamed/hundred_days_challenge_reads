@@ -1,0 +1,45 @@
+{
+  "round": "2026-11",
+  "candidates": [
+    {
+      "id": "thank_teacher",
+      "text": {
+        "ar": "اكتب رسالة شكر لمدرس أثّر فيك",
+        "en": "Write a thank-you note to a teacher who shaped you",
+        "de": "Schreib einer Lehrkraft, die dich geprägt hat, ein Dankeschön",
+        "tr": "Seni etkileyen bir öğretmene teşekkür notu yaz",
+        "fr": "Écris un mot de remerciement à un prof qui t’a marqué"
+      }
+    },
+    {
+      "id": "cook_neighbour",
+      "text": {
+        "ar": "اطبخ أكلة وابعت منها لجار",
+        "en": "Cook a meal and take some to a neighbour",
+        "de": "Koch etwas und bring einem Nachbarn davon",
+        "tr": "Bir yemek yap ve bir komşuna götür",
+        "fr": "Cuisine un plat et apportes-en à un voisin"
+      }
+    },
+    {
+      "id": "gift_plant",
+      "text": {
+        "ar": "ازرع نبتة صغيرة وهاديها لحد",
+        "en": "Plant a seedling and give it to someone",
+        "de": "Pflanz einen Setzling und verschenk ihn",
+        "tr": "Bir fide dik ve birine hediye et",
+        "fr": "Plante une jeune pousse et offre-la à quelqu’un"
+      }
+    },
+    {
+      "id": "family_hour",
+      "text": {
+        "ar": "اقعد ساعة مع عيلتك من غير موبايلات",
+        "en": "Spend an hour with your family, phones away",
+        "de": "Verbring eine Stunde mit deiner Familie, ohne Handys",
+        "tr": "Ailenle telefonsuz bir saat geçir",
+        "fr": "Passe une heure en famille, sans téléphones"
+      }
+    }
+  ]
+}

@@ -55,3 +55,7 @@ Only publish pages you have the rights to share: your own writing, public-domain
 - `category` sets the colour and the title: `info` (fact), `quote`, `poetry`, `hadith`, `quran` (verse). Leave it out, or use any other word, for the default look and the title "Today's note".
 - Quran verses are written in Arabic in every language file; they are not translated.
 - A language without a file falls back to another language, so add the entry to every file you maintain.
+
+## votes/ (the vote on new challenges, a 50-challenge reward)
+
+`votes/current.json` is the open vote: a `round` id and 2 to 5 `candidates`, each with an `id` and its `text` in every app language. People who reached 50 challenges pick one in the app; each vote lands in the Firestore collection `challengeVotes` with the round and the candidate id. To start a new vote, change `round` (for example `2026-12`) and the candidates; a new round id lets everyone vote again. To close voting, delete the file.
