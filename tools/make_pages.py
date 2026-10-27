@@ -194,6 +194,9 @@ def render(day, lang, entry, flat=False, audience=None):
 
 AUDIENCES = ("muslim", "general")
 
+# The last root day for everyone. The root list is closed at 10.
+SHARED_LAST = 10
+
 
 def _exists(folder):
     """A folder is there when it has a first page, flat or in a language."""
@@ -211,7 +214,10 @@ def build_index():
             n += 1
         return n
 
-    index = {"shared": last_of(ROOT)}
+    # Root days past SHARED_LAST (the "update the app" day, from
+    # tools/src/legacy/) are for versions older than index.json, which only
+    # walk the root list. Capping shared keeps every newer version off them.
+    index = {"shared": min(last_of(ROOT), SHARED_LAST)}
     for audience in AUDIENCES:
         index[audience] = last_of(ROOT / audience)
     return index
@@ -224,7 +230,7 @@ def copy_shared():
     import shutil
 
     day = 1
-    while _exists(ROOT / str(day)):
+    while day <= SHARED_LAST and _exists(ROOT / str(day)):
         for audience in AUDIENCES:
             for lang in DAY_LABEL:
                 src = ROOT / str(day) / lang

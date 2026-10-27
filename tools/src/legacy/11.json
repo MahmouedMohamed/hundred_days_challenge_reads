@@ -1,0 +1,28 @@
+{
+  "_comment": "Root day 11, for app versions older than index.json only (they stop at the root list). index.json keeps shared at 10, so current versions never download it. Render with: python tools/make_pages.py tools/src/legacy/11.json",
+  "ar": {
+    "title": "في تحديث جديد للتطبيق",
+    "body": "نسختك من تحدي الـ100 يوم قديمة، وفي نسخة جديدة فيها حاجات كتير اتضافت:\n\n• إشعارات بالأخبار والتحديثات\n• ملخص لكل شهر\n• شارات عند 3 و7 و14 يوم\n• زر «محتاج مساعدة دلوقتي» للعادات السيئة\n• شهادة موقّعة عند 75 تحدي\n• تصويت على التحديات الجديدة عند 50 تحدي\n\nحدّث التطبيق من Google Play عشان توصلك القراءات والأخبار الجديدة. تقدمك محفوظ على جهازك ومش هيضيع.",
+    "source": "ابحث عن «تحدي الـ100 يوم» في Google Play"
+  },
+  "en": {
+    "title": "There's a new version",
+    "body": "Your copy of 100 Day Challenge is out of date. The new version adds:\n\n• News and update notifications\n• A monthly recap\n• Badges at 3, 7 and 14 days\n• An \"I need help now\" button for bad habits\n• A signed certificate at 75 challenges\n• A vote on new challenges at 50 challenges\n\nUpdate from Google Play to keep getting new reads and news. Your progress stays on your phone and is not lost.",
+    "source": "Search \"100 Day Challenge\" on Google Play"
+  },
+  "de": {
+    "title": "Es gibt eine neue Version",
+    "body": "Deine Version von 100 Day Challenge ist veraltet. Die neue Version bringt:\n\n• Benachrichtigungen zu Neuigkeiten und Updates\n• Einen Monatsrückblick\n• Abzeichen nach 3, 7 und 14 Tagen\n• Einen Knopf „Ich brauche jetzt Hilfe“ für schlechte Gewohnheiten\n• Ein signiertes Zertifikat nach 75 Challenges\n• Eine Abstimmung über neue Challenges nach 50 Challenges\n\nAktualisiere die App über Google Play, damit du weiter neue Texte und Neuigkeiten bekommst. Dein Fortschritt bleibt auf deinem Handy und geht nicht verloren.",
+    "source": "Suche „100 Day Challenge“ bei Google Play"
+  },
+  "tr": {
+    "title": "Yeni bir sürüm var",
+    "body": "100 Day Challenge sürümün eski. Yeni sürümde şunlar var:\n\n• Haber ve güncelleme bildirimleri\n• Aylık özet\n• 3, 7 ve 14. günlerde rozetler\n• Kötü alışkanlıklar için \"Şimdi yardıma ihtiyacım var\" düğmesi\n• 75 görevde imzalı sertifika\n• 50 görevde yeni görevler için oylama\n\nYeni okumalar ve haberler almaya devam etmek için uygulamayı Google Play'den güncelle. İlerlemen telefonunda kalır, kaybolmaz.",
+    "source": "Google Play'de \"100 Day Challenge\" ara"
+  },
+  "fr": {
+    "title": "Une nouvelle version est disponible",
+    "body": "Ta version de 100 Day Challenge n'est plus à jour. La nouvelle version ajoute :\n\n• Des notifications pour les nouvelles et les mises à jour\n• Un bilan de chaque mois\n• Des badges à 3, 7 et 14 jours\n• Un bouton « J'ai besoin d'aide maintenant » pour les mauvaises habitudes\n• Un certificat signé à 75 défis\n• Un vote sur les nouveaux défis à 50 défis\n\nMets l'application à jour sur Google Play pour continuer à recevoir les nouvelles lectures et les nouvelles. Ta progression reste sur ton téléphone et n'est pas perdue.",
+    "source": "Cherche « 100 Day Challenge » sur Google Play"
+  }
+}
